@@ -12,7 +12,7 @@ import { Config } from "./models/config";
 import { DataStore } from "./constants";
 import { logger } from "./logger";
 
-const auth: Auth = require("../auth.json");
+const auth: Auth = require("../auth.js");
 const config: Config = require("../config.json");
 
 export const spotifyClient = new SpotifyWebApi({

@@ -15,7 +15,7 @@ import { Playlist } from "./models/playlist";
 import { DataStore, Strings } from "./constants";
 import { DataUtils } from "./utils/data-utils";
 
-const auth: Auth = require("../auth.json");
+const auth: Auth = require("../auth.js");
 const config: Config = require("../config.json");
 
 // How many times the server should check for playlist updates, in seconds
