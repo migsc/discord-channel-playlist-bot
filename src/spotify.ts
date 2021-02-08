@@ -148,16 +148,16 @@ export namespace SpotifyHelpers {
             await makeList();
         }
 
-        // Get the tracks currently on the user's playlist
-        let playlistTracksResponse;
-        try {
-            playlistTracksResponse = await spotifyClient.getPlaylistTracks(userPlaylistId());
-        } catch (e) {
-            logger.warn(`Trouble getting playlist tracks for Spotify user ${userId}: ${JSON.stringify(e)}`);
+        // // Get the tracks currently on the user's playlist
+        // let playlistTracksResponse;
+        // try {
+        //     playlistTracksResponse = await spotifyClient.getPlaylistTracks(userPlaylistId());
+        // } catch (e) {
+        //     logger.warn(`Trouble getting playlist tracks for Spotify user ${userId}: ${JSON.stringify(e)}`);
 
-            // Playlist messed up, so make a new one
-            await makeList();
-        }
+        //     // Playlist messed up, so make a new one
+        //     await makeList();
+        // }
 
         // // Remove all tracks from the user's playlist
         // const tracksToRemove = playlistTracksResponse.body.items.map(item => ({ uri: item.track.uri }));
