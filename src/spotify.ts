@@ -159,18 +159,18 @@ export namespace SpotifyHelpers {
             await makeList();
         }
 
-        // Remove all tracks from the user's playlist
-        const tracksToRemove = playlistTracksResponse.body.items.map(item => ({ uri: item.track.uri }));
-        if (!_.isEmpty(tracksToRemove)) {
-            try {
-                await spotifyClient.removeTracksFromPlaylist(userPlaylistId(), tracksToRemove);
-            } catch (e) {
-                logger.warn(`Trouble removing existing playlist tracks for Spotify user ${userId}: ${JSON.stringify(e)}`);
+        // // Remove all tracks from the user's playlist
+        // const tracksToRemove = playlistTracksResponse.body.items.map(item => ({ uri: item.track.uri }));
+        // if (!_.isEmpty(tracksToRemove)) {
+        //     try {
+        //         await spotifyClient.removeTracksFromPlaylist(userPlaylistId(), tracksToRemove);
+        //     } catch (e) {
+        //         logger.warn(`Trouble removing existing playlist tracks for Spotify user ${userId}: ${JSON.stringify(e)}`);
                 
-                // Playlist messed up, so make a new one
-                await makeList();
-            }
-        }
+        //         // Playlist messed up, so make a new one
+        //         await makeList();
+        //     }
+        // }
 
         // Add the channel's playlist to the user's playlist
         try {
