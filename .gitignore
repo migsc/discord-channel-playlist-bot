@@ -3,6 +3,4 @@ node_modules/
 data/
 dist/
 
-auth.json
-
 *.log
