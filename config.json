@@ -2,7 +2,7 @@
     "messageOnPlaylistChange": false,
     "messageOnPlaylistCommit": false,
     "keepOldPlaylistSongs": false,
-    "playlistUpdateFrequency": 604800,
-    "playlistName": "Weekly Playlist",
+    "playlistUpdateFrequency": 60,
+    "playlistName": "🔞 Washed FM",
     "dataStoreLocation": "data/store.json"
 }

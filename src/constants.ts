@@ -41,7 +41,7 @@ export namespace Constants {
                     1: `Uh oh... your token appears to be invalid. To receive a valid token, ${Strings.Common.authInstructions}.`,
                     2: Strings.Common.helpInstructions
                 },
-                successResponse: "You're all set! You can now **@Mention** me in any channel and say `subscribe` to have me manage a weekly playlist for that channel."
+                successResponse: "You're all set! You can now **@Mention** me in any channel and say `subscribe` to have me manage a playlist for that channel."
             },
             Subscribe: {
                 unregisteredUserId: {
