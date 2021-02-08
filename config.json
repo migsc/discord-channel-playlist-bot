@@ -3,6 +3,6 @@
     "messageOnPlaylistCommit": false,
     "keepOldPlaylistSongs": false,
     "playlistUpdateFrequency": 60,
-    "playlistName": "🔞 Washed FM",
+    "playlistName": "Washed FM",
     "dataStoreLocation": "data/store.json"
 }

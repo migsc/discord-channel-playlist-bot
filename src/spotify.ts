@@ -104,7 +104,7 @@ export namespace SpotifyHelpers {
 
     export async function updateChannelPlaylistForUser(userId: SpotifyUser.Id, playlist: Playlist): Promise<void> {
         const userDataStore = store.get<UserData.Collection>(DataStore.Keys.userData) || {};
-        logger.debug(`Updating channel playlist for user ${userId}`)
+        logger.log(`Updating channel playlist for user ${userId}`)
         
         function userPlaylists(): UserData.PlaylistCollection {
             let userData = userDataStore[userId];
